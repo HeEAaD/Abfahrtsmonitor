@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		6A09F9E71D96AC520036F9EA /* DepartueCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09F9E61D96AC520036F9EA /* DepartueCache.swift */; };
 		6A09F9E91D96C2020036F9EA /* StopCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09F9E81D96C2020036F9EA /* StopCache.swift */; };
+		6A6779761D980FF100330094 /* Tram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A67796D1D980FF100330094 /* Tram.framework */; };
+		6A67797F1D980FF100330094 /* Tram.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A67796F1D980FF100330094 /* Tram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A6779821D980FF100330094 /* Tram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A67796D1D980FF100330094 /* Tram.framework */; };
+		6A6779831D980FF100330094 /* Tram.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A67796D1D980FF100330094 /* Tram.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A6779AC1D9812C200330094 /* Tram_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A6779AA1D9812C200330094 /* Tram_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A6779AF1D9812C200330094 /* Tram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6779A81D9812C200330094 /* Tram.framework */; };
+		6A6779B01D9812C200330094 /* Tram.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6779A81D9812C200330094 /* Tram.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A6779BA1D9815BE00330094 /* EfaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779B91D9815BE00330094 /* EfaProvider.swift */; };
+		6A6779BB1D9815BE00330094 /* EfaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779B91D9815BE00330094 /* EfaProvider.swift */; };
+		6A6779BD1D9815D000330094 /* EfaProvider_TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779BC1D9815D000330094 /* EfaProvider_TestCase.swift */; };
+		6A6779C21D98165F00330094 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779C11D98165F00330094 /* Departure.swift */; };
+		6A6779C41D9816B000330094 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779C31D9816B000330094 /* Stop.swift */; };
+		6A6779C51D9819ED00330094 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779C11D98165F00330094 /* Departure.swift */; };
+		6A6779C61D9819F000330094 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6779C31D9816B000330094 /* Stop.swift */; };
 		6A88146A1D95752800197C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8814691D95752800197C33 /* AppDelegate.swift */; };
 		6A88146C1D95752800197C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A88146B1D95752800197C33 /* ViewController.swift */; };
 		6A88146F1D95752800197C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A88146D1D95752800197C33 /* Main.storyboard */; };
@@ -24,13 +38,33 @@
 		6A8814931D95752900197C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A8814921D95752900197C33 /* Assets.xcassets */; };
 		6A8814A31D957D3D00197C33 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8814A21D957D3D00197C33 /* Stop.swift */; };
 		6A8814A71D95866D00197C33 /* NearbyStopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8814A61D95866D00197C33 /* NearbyStopRow.swift */; };
-		6AF62E531D95D49500594F30 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF62E521D95D49500594F30 /* Departure.swift */; };
 		6AF62E551D95D4C000594F30 /* DepartureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF62E541D95D4C000594F30 /* DepartureRow.swift */; };
 		6AF62E571D95D4E200594F30 /* DeparturesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF62E561D95D4E200594F30 /* DeparturesController.swift */; };
 		6AF62E5B1D967BF900594F30 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF62E5A1D967BF900594F30 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6A6779771D980FF100330094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A88145E1D95752800197C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A67796C1D980FF100330094;
+			remoteInfo = Tram;
+		};
+		6A6779801D980FF100330094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A88145E1D95752800197C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A67796C1D980FF100330094;
+			remoteInfo = Tram;
+		};
+		6A6779AD1D9812C200330094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A88145E1D95752800197C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A6779A71D9812C200330094;
+			remoteInfo = Tram_watchOS;
+		};
 		6A88147A1D95752900197C33 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6A88145E1D95752800197C33 /* Project object */;
@@ -48,6 +82,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6A6779871D980FF100330094 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A6779831D980FF100330094 /* Tram.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779A21D9810D100330094 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A6779B01D9812C200330094 /* Tram.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A88149A1D95752900197C33 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +131,17 @@
 /* Begin PBXFileReference section */
 		6A09F9E61D96AC520036F9EA /* DepartueCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartueCache.swift; sourceTree = "<group>"; };
 		6A09F9E81D96C2020036F9EA /* StopCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopCache.swift; sourceTree = "<group>"; };
+		6A67796D1D980FF100330094 /* Tram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A67796F1D980FF100330094 /* Tram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tram.h; sourceTree = "<group>"; };
+		6A6779701D980FF100330094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6779751D980FF100330094 /* TramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6779A81D9812C200330094 /* Tram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6779AA1D9812C200330094 /* Tram_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tram_watchOS.h; sourceTree = "<group>"; };
+		6A6779AB1D9812C200330094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A6779B91D9815BE00330094 /* EfaProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EfaProvider.swift; path = Efa/EfaProvider.swift; sourceTree = "<group>"; };
+		6A6779BC1D9815D000330094 /* EfaProvider_TestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EfaProvider_TestCase.swift; path = Efa/EfaProvider_TestCase.swift; sourceTree = "<group>"; };
+		6A6779C11D98165F00330094 /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		6A6779C31D9816B000330094 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6A8814661D95752800197C33 /* Abfahrtmonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Abfahrtmonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8814691D95752800197C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A88146B1D95752800197C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,17 +161,39 @@
 		6A8814941D95752900197C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A8814A21D957D3D00197C33 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		6A8814A61D95866D00197C33 /* NearbyStopRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyStopRow.swift; sourceTree = "<group>"; };
-		6AF62E521D95D49500594F30 /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
 		6AF62E541D95D4C000594F30 /* DepartureRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartureRow.swift; sourceTree = "<group>"; };
 		6AF62E561D95D4E200594F30 /* DeparturesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeparturesController.swift; sourceTree = "<group>"; };
 		6AF62E5A1D967BF900594F30 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6A6779691D980FF100330094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779721D980FF100330094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6779761D980FF100330094 /* Tram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779A41D9812C200330094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8814631D95752800197C33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6779821D980FF100330094 /* Tram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,18 +201,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A6779AF1D9812C200330094 /* Tram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A67796E1D980FF100330094 /* Tram */ = {
+			isa = PBXGroup;
+			children = (
+				6A6779BE1D98161800330094 /* Model */,
+				6A67798E1D98104900330094 /* Efa */,
+				6A67796F1D980FF100330094 /* Tram.h */,
+				6A6779701D980FF100330094 /* Info.plist */,
+			);
+			path = Tram;
+			sourceTree = "<group>";
+		};
+		6A67798E1D98104900330094 /* Efa */ = {
+			isa = PBXGroup;
+			children = (
+				6A6779B91D9815BE00330094 /* EfaProvider.swift */,
+				6A6779BC1D9815D000330094 /* EfaProvider_TestCase.swift */,
+			);
+			name = Efa;
+			sourceTree = "<group>";
+		};
+		6A6779A91D9812C200330094 /* Tram_watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				6A6779AA1D9812C200330094 /* Tram_watchOS.h */,
+				6A6779AB1D9812C200330094 /* Info.plist */,
+			);
+			path = Tram_watchOS;
+			sourceTree = "<group>";
+		};
+		6A6779BE1D98161800330094 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A6779C11D98165F00330094 /* Departure.swift */,
+				6A6779C31D9816B000330094 /* Stop.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6A88145D1D95752800197C33 = {
 			isa = PBXGroup;
 			children = (
 				6A8814681D95752800197C33 /* Abfahrtmonitor */,
 				6A88147C1D95752900197C33 /* Abfahrtmonitor WatchKit App */,
 				6A88148B1D95752900197C33 /* Abfahrtmonitor WatchKit Extension */,
+				6A67796E1D980FF100330094 /* Tram */,
+				6A6779A91D9812C200330094 /* Tram_watchOS */,
 				6A8814671D95752800197C33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +264,9 @@
 				6A8814661D95752800197C33 /* Abfahrtmonitor.app */,
 				6A8814781D95752900197C33 /* Abfahrtmonitor WatchKit App.app */,
 				6A8814871D95752900197C33 /* Abfahrtmonitor WatchKit Extension.appex */,
+				6A67796D1D980FF100330094 /* Tram.framework */,
+				6A6779751D980FF100330094 /* TramTests.xctest */,
+				6A6779A81D9812C200330094 /* Tram.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +302,6 @@
 				6A8814A61D95866D00197C33 /* NearbyStopRow.swift */,
 				6AF62E541D95D4C000594F30 /* DepartureRow.swift */,
 				6A8814A21D957D3D00197C33 /* Stop.swift */,
-				6AF62E521D95D49500594F30 /* Departure.swift */,
 				6AF62E5A1D967BF900594F30 /* LocationManager.swift */,
 				6A09F9E61D96AC520036F9EA /* DepartueCache.swift */,
 				6A09F9E81D96C2020036F9EA /* StopCache.swift */,
@@ -183,7 +315,80 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6A67796A1D980FF100330094 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A67797F1D980FF100330094 /* Tram.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779A51D9812C200330094 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6779AC1D9812C200330094 /* Tram_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		6A67796C1D980FF100330094 /* Tram_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6779841D980FF100330094 /* Build configuration list for PBXNativeTarget "Tram_iOS" */;
+			buildPhases = (
+				6A6779681D980FF100330094 /* Sources */,
+				6A6779691D980FF100330094 /* Frameworks */,
+				6A67796A1D980FF100330094 /* Headers */,
+				6A67796B1D980FF100330094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tram_iOS;
+			productName = Tram;
+			productReference = 6A67796D1D980FF100330094 /* Tram.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A6779741D980FF100330094 /* TramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6779881D980FF100330094 /* Build configuration list for PBXNativeTarget "TramTests" */;
+			buildPhases = (
+				6A6779711D980FF100330094 /* Sources */,
+				6A6779721D980FF100330094 /* Frameworks */,
+				6A6779731D980FF100330094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A6779781D980FF100330094 /* PBXTargetDependency */,
+			);
+			name = TramTests;
+			productName = TramTests;
+			productReference = 6A6779751D980FF100330094 /* TramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A6779A71D9812C200330094 /* Tram_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A6779B31D9812C200330094 /* Build configuration list for PBXNativeTarget "Tram_watchOS" */;
+			buildPhases = (
+				6A6779A31D9812C200330094 /* Sources */,
+				6A6779A41D9812C200330094 /* Frameworks */,
+				6A6779A51D9812C200330094 /* Headers */,
+				6A6779A61D9812C200330094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tram_watchOS;
+			productName = Tram_watchOS;
+			productReference = 6A6779A81D9812C200330094 /* Tram.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		6A8814651D95752800197C33 /* Abfahrtmonitor */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A88149F1D95752900197C33 /* Build configuration list for PBXNativeTarget "Abfahrtmonitor" */;
@@ -192,11 +397,13 @@
 				6A8814631D95752800197C33 /* Frameworks */,
 				6A8814641D95752800197C33 /* Resources */,
 				6A88149E1D95752900197C33 /* Embed Watch Content */,
+				6A6779871D980FF100330094 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6A88147B1D95752900197C33 /* PBXTargetDependency */,
+				6A6779811D980FF100330094 /* PBXTargetDependency */,
 			);
 			name = Abfahrtmonitor;
 			productName = Abfahrtmonitor;
@@ -227,10 +434,12 @@
 				6A8814831D95752900197C33 /* Sources */,
 				6A8814841D95752900197C33 /* Frameworks */,
 				6A8814851D95752900197C33 /* Resources */,
+				6A6779A21D9810D100330094 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A6779AE1D9812C200330094 /* PBXTargetDependency */,
 			);
 			name = "Abfahrtmonitor WatchKit Extension";
 			productName = "Abfahrtmonitor WatchKit Extension";
@@ -247,6 +456,24 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Matthischke;
 				TargetAttributes = {
+					6A67796C1D980FF100330094 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LXEC4LQFH8;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					6A6779741D980FF100330094 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LXEC4LQFH8;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					6A6779A71D9812C200330094 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = LXEC4LQFH8;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
 					6A8814651D95752800197C33 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = LXEC4LQFH8;
@@ -280,11 +507,35 @@
 				6A8814651D95752800197C33 /* Abfahrtmonitor */,
 				6A8814771D95752900197C33 /* Abfahrtmonitor WatchKit App */,
 				6A8814861D95752900197C33 /* Abfahrtmonitor WatchKit Extension */,
+				6A67796C1D980FF100330094 /* Tram_iOS */,
+				6A6779741D980FF100330094 /* TramTests */,
+				6A6779A71D9812C200330094 /* Tram_watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6A67796B1D980FF100330094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779731D980FF100330094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779A61D9812C200330094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8814641D95752800197C33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +566,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6A6779681D980FF100330094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6779C21D98165F00330094 /* Departure.swift in Sources */,
+				6A6779BA1D9815BE00330094 /* EfaProvider.swift in Sources */,
+				6A6779C41D9816B000330094 /* Stop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779711D980FF100330094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6779BD1D9815D000330094 /* EfaProvider_TestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A6779A31D9812C200330094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A6779C51D9819ED00330094 /* Departure.swift in Sources */,
+				6A6779BB1D9815BE00330094 /* EfaProvider.swift in Sources */,
+				6A6779C61D9819F000330094 /* Stop.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6A8814621D95752800197C33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,7 +608,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AF62E571D95D4E200594F30 /* DeparturesController.swift in Sources */,
-				6AF62E531D95D49500594F30 /* Departure.swift in Sources */,
 				6A88148F1D95752900197C33 /* ExtensionDelegate.swift in Sources */,
 				6AF62E551D95D4C000594F30 /* DepartureRow.swift in Sources */,
 				6AF62E5B1D967BF900594F30 /* LocationManager.swift in Sources */,
@@ -345,6 +623,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		6A6779781D980FF100330094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A67796C1D980FF100330094 /* Tram_iOS */;
+			targetProxy = 6A6779771D980FF100330094 /* PBXContainerItemProxy */;
+		};
+		6A6779811D980FF100330094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A67796C1D980FF100330094 /* Tram_iOS */;
+			targetProxy = 6A6779801D980FF100330094 /* PBXContainerItemProxy */;
+		};
+		6A6779AE1D9812C200330094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A6779A71D9812C200330094 /* Tram_watchOS */;
+			targetProxy = 6A6779AD1D9812C200330094 /* PBXContainerItemProxy */;
+		};
 		6A88147B1D95752900197C33 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6A8814771D95752900197C33 /* Abfahrtmonitor WatchKit App */;
@@ -385,6 +678,139 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6A6779851D980FF100330094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tram/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.matthischke.Tram;
+				PRODUCT_NAME = Tram;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A6779861D980FF100330094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tram/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.matthischke.Tram;
+				PRODUCT_NAME = Tram;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A6779891D980FF100330094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.matthischke.TramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6A67798A1D980FF100330094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.matthischke.TramTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6A6779B11D9812C200330094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tram_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.matthischke.Tram-watchOS";
+				PRODUCT_NAME = Tram;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		6A6779B21D9812C200330094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = LXEC4LQFH8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tram_watchOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.matthischke.Tram-watchOS";
+				PRODUCT_NAME = Tram;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		6A8814951D95752900197C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -549,6 +975,7 @@
 		6A8814A01D95752900197C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LXEC4LQFH8;
 				INFOPLIST_FILE = Abfahrtmonitor/Info.plist;
@@ -562,6 +989,7 @@
 		6A8814A11D95752900197C33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LXEC4LQFH8;
 				INFOPLIST_FILE = Abfahrtmonitor/Info.plist;
@@ -575,6 +1003,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6A6779841D980FF100330094 /* Build configuration list for PBXNativeTarget "Tram_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6779851D980FF100330094 /* Debug */,
+				6A6779861D980FF100330094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6779881D980FF100330094 /* Build configuration list for PBXNativeTarget "TramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6779891D980FF100330094 /* Debug */,
+				6A67798A1D980FF100330094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A6779B31D9812C200330094 /* Build configuration list for PBXNativeTarget "Tram_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6779B11D9812C200330094 /* Debug */,
+				6A6779B21D9812C200330094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6A8814611D95752800197C33 /* Build configuration list for PBXProject "Abfahrtmonitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

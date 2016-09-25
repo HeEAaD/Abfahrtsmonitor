@@ -9,6 +9,7 @@
 import Foundation
 import CoreLocation
 
+// TODO: Encode Tram.Stop and remove this class
 class Stop: NSObject, NSCoding {
     let id: String
     let name: String
@@ -53,12 +54,10 @@ class Stop: NSObject, NSCoding {
     }
 }
 
-
-
 // MARK: - Distance
 extension Stop {
-
     func distance(to coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
         return coordinate.distance(from: self.coordinate)
     }
 }
+

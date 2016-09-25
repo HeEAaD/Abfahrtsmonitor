@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import Tram
 
 class DepartureRow: NSObject {
 

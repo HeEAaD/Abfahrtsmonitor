@@ -1,6 +1,6 @@
 //
 //  Departure.swift
-//  Abfahrtmonitor
+//  Tram
 //
 //  Created by Steffen Matthischke on 23.09.16.
 //  Copyright © 2016 Matthischke. All rights reserved.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct Departure {
-    let line: String
-    let destination: String
-    let date: Date
+public struct Departure {
+    public let line: String
+    public let destination: String
+    public let date: Date
 }

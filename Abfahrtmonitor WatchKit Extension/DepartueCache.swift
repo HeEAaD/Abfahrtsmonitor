@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Tram
 
 class DepartueCache {
     static var shared = DepartueCache()
