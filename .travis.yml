@@ -1,4 +1,3 @@
 language: objective-c
 osx_image: xcode8
-xcode_project: Abfahrtmonitor.xcodeproj
-xcode_scheme: Abfahrtmonitor
+script: xcodebuild -project Abfahrtmonitor.xcodeproj -scheme Abfahrtmonitor build | xcpretty
