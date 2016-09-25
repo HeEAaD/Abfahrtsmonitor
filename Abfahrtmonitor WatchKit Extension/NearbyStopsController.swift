@@ -73,7 +73,7 @@ class NearbyStopsController: WKInterfaceController {
             }
         }
 
-        guard let lastLocation = self.lastLocation, lastLocation.distance(from: currentLocation) < 50 else {
+        if let lastLocation = self.lastLocation, lastLocation.distance(from: currentLocation) < 50 {
             return
         }
 

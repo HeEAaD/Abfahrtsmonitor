@@ -8,8 +8,8 @@
 
 import CoreLocation
 
-struct Stop {
-    let id: String
-    let name: String
-    let coordinate: CLLocationCoordinate2D
+public struct Stop {
+    public let id: String
+    public let name: String
+    public let coordinate: CLLocationCoordinate2D
 }
