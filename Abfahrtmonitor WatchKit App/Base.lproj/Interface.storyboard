@@ -15,14 +15,14 @@
                                 <tableRow identifier="DepartureRow" selectable="NO" id="82b-h5-ZxF" customClass="DepartureRow" customModule="Abfahrtmonitor_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="lxp-9t-7s4">
                                         <items>
-                                            <label width="0.14999999999999999" alignment="left" verticalAlignment="center" text="75" textAlignment="right" minimumScaleFactor="0.5" id="3pC-0D-ast">
+                                            <label width="0.14999999999999999" alignment="left" verticalAlignment="center" text=" " textAlignment="right" minimumScaleFactor="0.5" id="3pC-0D-ast">
                                                 <color key="textColor" red="0.99649304149999995" green="0.84903156759999998" blue="0.1063938364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
-                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text="Postplatz" id="7dl-iH-Ill">
+                                            <label width="0.69999999999999996" alignment="left" verticalAlignment="center" text=" " id="7dl-iH-Ill">
                                                 <color key="textColor" red="0.99649304149999995" green="0.84903156759999998" blue="0.1063938364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="font" style="UICTFontTextStyleBody"/>
                                             </label>
-                                            <timer width="0.14999999999999999" alignment="right" verticalAlignment="center" minimumScaleFactor="0.5" id="9DV-y6-tbs">
+                                            <timer width="20" alignment="right" verticalAlignment="center" hidden="YES" minimumScaleFactor="0.5" id="9DV-y6-tbs">
                                                 <color key="textColor" red="0.99649304149999995" green="0.84903156759999998" blue="0.1063938364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <calendarUnit key="units" minute="YES"/>
                                             </timer>
@@ -56,11 +56,11 @@
                                 <tableRow identifier="NearbyStopRow" id="8Ev-aA-0Ic" customClass="NearbyStopRow" customModule="Abfahrtmonitor_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="xDG-cY-icl">
                                         <items>
-                                            <label width="1" alignment="left" verticalAlignment="center" text="123m" minimumScaleFactor="0.10000000000000001" id="nly-Hw-9PO">
+                                            <label width="1" alignment="left" verticalAlignment="center" text=" " minimumScaleFactor="0.10000000000000001" id="nly-Hw-9PO">
                                                 <color key="textColor" red="0.99649304149999995" green="0.84903156759999998" blue="0.1063938364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
                                             </label>
-                                            <label width="1" alignment="left" verticalAlignment="center" text="Postplatz" id="Pyz-PT-yzD">
+                                            <label width="1" alignment="left" verticalAlignment="center" text=" " id="Pyz-PT-yzD">
                                                 <color key="textColor" red="0.99649304149999995" green="0.84903156759999998" blue="0.1063938364" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </label>
                                         </items>

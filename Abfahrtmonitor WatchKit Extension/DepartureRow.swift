@@ -20,5 +20,6 @@ class DepartureRow: NSObject {
         self.destinationLabel.setText(departure.destination)
         self.timerLabel.setDate(departure.date)
         self.timerLabel.start()
+        self.timerLabel.setHidden(false)
     }
 }

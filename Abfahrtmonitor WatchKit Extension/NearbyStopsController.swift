@@ -81,7 +81,7 @@ class NearbyStopsController: WKInterfaceController {
 
         StopCache.shared.stops(by: currentLocation) { [weak self] stops in
             self?.stops = stops
-            self?.table.setNumberOfRows(stops.count, withRowType: "NearbyStopRow")
+            self?.table.update(numberOfRows: stops.count, withRowType: "NearbyStopRow")
 
             for (i, stop) in stops.enumerated() {
                 if let row = self?.table.rowController(at: i) as? NearbyStopRow {

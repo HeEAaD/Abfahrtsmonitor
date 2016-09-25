@@ -15,7 +15,8 @@ class DeparturesController: WKInterfaceController {
 
     private var departures = [Departure]() {
         didSet {
-            self.table.setNumberOfRows(self.departures.count, withRowType: "DepartureRow")
+
+            self.table.update(numberOfRows: self.departures.count, withRowType: "DepartureRow")
 
             for (i, departue) in self.departures.enumerated() {
                 if let row = self.table.rowController(at: i) as? DepartureRow {
@@ -54,4 +55,20 @@ class DeparturesController: WKInterfaceController {
         super.didDeactivate()
     }
 
+}
+
+extension WKInterfaceTable {
+    func update(numberOfRows: Int, withRowType rowType: String) {
+        if self.numberOfRows == 0 {
+            self.setNumberOfRows(numberOfRows, withRowType: rowType)
+        } else {
+            let rowDiff = self.numberOfRows - numberOfRows
+
+            if rowDiff < 0 {
+                self.insertRows(at: IndexSet(integersIn: 0..<abs(rowDiff)), withRowType: rowType)
+            } else if rowDiff > 0 {
+                self.removeRows(at: IndexSet(integersIn: 0..<rowDiff))
+            }
+        }
+    }
 }
