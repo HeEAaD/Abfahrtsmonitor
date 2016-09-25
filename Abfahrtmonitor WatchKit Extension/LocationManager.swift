@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreLocation
+import Tram
 
 typealias UpdateLocationBlock = (CLLocationCoordinate2D?, Error?) -> Void
 
@@ -52,10 +53,17 @@ extension LocationManager: CLLocationManagerDelegate {
     }
 }
 
+// MARK: - Distance
 extension CLLocationCoordinate2D {
     func distance(from coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
         let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
         let selfLocation = CLLocation(latitude: self.latitude, longitude: self.longitude)
         return location.distance(from: selfLocation)
+    }
+}
+
+extension Stop {
+    func distance(to coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
+        return coordinate.distance(from: self.coordinate)
     }
 }

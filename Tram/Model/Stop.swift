@@ -13,3 +13,9 @@ public struct Stop {
     public let name: String
     public let coordinate: CLLocationCoordinate2D
 }
+
+extension Stop: Equatable {
+    public static func ==(lhs: Stop, rhs: Stop) -> Bool {
+        return lhs.id == rhs.id
+    }
+}

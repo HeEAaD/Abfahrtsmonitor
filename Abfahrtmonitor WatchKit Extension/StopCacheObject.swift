@@ -1,5 +1,5 @@
 //
-//  Stop.swift
+//  StopCacheObject.swift
 //  Abfahrtmonitor
 //
 //  Created by Steffen Matthischke on 23.09.16.
@@ -8,18 +8,17 @@
 
 import Foundation
 import CoreLocation
+import Tram
 
-// TODO: Encode Tram.Stop and remove this class
-class Stop: NSObject, NSCoding {
+class StopCacheObject: NSObject, NSCoding {
     let id: String
     let name: String
     let coordinate: CLLocationCoordinate2D
 
-
-    init (id: String, name: String, coordinate: CLLocationCoordinate2D) {
-        self.id = id
-        self.name = name
-        self.coordinate = coordinate
+    init(stop: Stop) {
+        self.id = stop.id
+        self.name = stop.name
+        self.coordinate = stop.coordinate
     }
 
     // MARK: - NSCoding
@@ -54,10 +53,10 @@ class Stop: NSObject, NSCoding {
     }
 }
 
-// MARK: - Distance
 extension Stop {
-    func distance(to coordinate: CLLocationCoordinate2D) -> CLLocationDistance {
-        return coordinate.distance(from: self.coordinate)
+    init(cacheObject: StopCacheObject) {
+        self.id = cacheObject.id
+        self.name = cacheObject.name
+        self.coordinate = cacheObject.coordinate
     }
 }
-

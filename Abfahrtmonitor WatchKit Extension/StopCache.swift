@@ -26,7 +26,13 @@ class StopCache {
 
     init() {
         if let archivedStops = self.defaults.array(forKey: Constants.archivedStopsKey) as? [Data] {
-            self.stops = archivedStops.flatMap { NSKeyedUnarchiver.unarchiveObject(with: $0) as? Stop }
+            // TODO:
+            self.stops = archivedStops.flatMap {
+                if let cacheObject = NSKeyedUnarchiver.unarchiveObject(with: $0) as? StopCacheObject {
+                    return Stop(cacheObject: cacheObject)
+                }
+                return nil
+            }
         }
     }
 
@@ -45,19 +51,21 @@ class StopCache {
         completion(cachedStops)
 
         Tram.Stop.find(by: coordinate) { [weak self] stops in
-            let stops = stops.map { Stop(id:$0.id, name: $0.name, coordinate: $0.coordinate) }
-            self?.cache(stops:stops)
+            self?.cache(add:stops)
             completion(stops)
         }
     }
 
-    private func cache(stops: [Stop]) {
-
+    private func cache(add stops: [Stop]) {
+        
         for stop in stops where !self.stops.contains(stop) {
             self.stops.append(stop)
         }
 
-        let archivedStops = self.stops.map { NSKeyedArchiver.archivedData(withRootObject: $0) }
+        let archivedStops = self.stops.map { stop -> Data in
+            let cacheObject = StopCacheObject(stop: stop)
+            return NSKeyedArchiver.archivedData(withRootObject: cacheObject)
+        }
         self.defaults.set(archivedStops, forKey: Constants.archivedStopsKey)
         self.defaults.synchronize()
     }
