@@ -75,15 +75,16 @@ class StopCache {
 extension Stop {
     static var selectedStop: Stop? {
         get {
-            if let archivedStop = UserDefaults.standard.object(forKey: "archivedSelectedStop") as? Data {
-                return NSKeyedUnarchiver.unarchiveObject(with: archivedStop) as? Stop
+            if let archivedStop = UserDefaults.standard.object(forKey: "archivedSelectedStop") as? Data,
+                let cacheObject = NSKeyedUnarchiver.unarchiveObject(with: archivedStop) as? StopCacheObject {
+                return Stop(cacheObject: cacheObject)
             } else {
                 return nil
             }
         }
         set {
             if let stop = newValue {
-                let archivedStop = NSKeyedArchiver.archivedData(withRootObject: stop)
+                let archivedStop = NSKeyedArchiver.archivedData(withRootObject: StopCacheObject(stop: stop))
                 UserDefaults.standard.set(archivedStop, forKey:"archivedSelectedStop")
             } else {
                 UserDefaults.standard.set(nil, forKey:"archivedSelectedStop")

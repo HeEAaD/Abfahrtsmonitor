@@ -18,7 +18,6 @@ class DepartueCache {
 
         if let cachedDepartures = cache[stopId] {
             completion(cachedDepartures)
-            cache[stopId] = nil
         }
 
         // TODO: find fast API
