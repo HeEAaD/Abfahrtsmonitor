@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='3' failures='0'>
+  <testsuite name='TramTests.EfaProvider_TestCase' tests='3' failures='0'>
+    <testcase classname='TramTests.EfaProvider_TestCase' name='test_all' time='0.014'/>
+    <testcase classname='TramTests.EfaProvider_TestCase' name='test_coordBaseURL_gvh' time='0.003'/>
+    <testcase classname='TramTests.EfaProvider_TestCase' name='test_coordBaseURL_vvo' time='0.000'/>
+  </testsuite>
+</testsuites>
