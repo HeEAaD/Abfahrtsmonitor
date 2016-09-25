@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A6779A71D9812C200330094"
-               BuildableName = "Tram_watchOS.framework"
+               BuildableName = "Tram.framework"
                BlueprintName = "Tram_watchOS"
                ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A6779A71D9812C200330094"
-            BuildableName = "Tram_watchOS.framework"
+            BuildableName = "Tram.framework"
             BlueprintName = "Tram_watchOS"
             ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A6779A71D9812C200330094"
-            BuildableName = "Tram_watchOS.framework"
+            BuildableName = "Tram.framework"
             BlueprintName = "Tram_watchOS"
             ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
          </BuildableReference>

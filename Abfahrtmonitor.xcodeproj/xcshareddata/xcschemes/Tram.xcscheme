@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A67796C1D980FF100330094"
-               BuildableName = "Tram_iOS.framework"
+               BuildableName = "Tram.framework"
                BlueprintName = "Tram_iOS"
                ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A67796C1D980FF100330094"
-            BuildableName = "Tram_iOS.framework"
+            BuildableName = "Tram.framework"
             BlueprintName = "Tram_iOS"
             ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A67796C1D980FF100330094"
-            BuildableName = "Tram_iOS.framework"
+            BuildableName = "Tram.framework"
             BlueprintName = "Tram_iOS"
             ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A67796C1D980FF100330094"
-            BuildableName = "Tram_iOS.framework"
+            BuildableName = "Tram.framework"
             BlueprintName = "Tram_iOS"
             ReferencedContainer = "container:Abfahrtmonitor.xcodeproj">
          </BuildableReference>
