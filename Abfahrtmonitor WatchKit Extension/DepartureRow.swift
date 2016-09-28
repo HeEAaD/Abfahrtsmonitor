@@ -18,8 +18,13 @@ class DepartureRow: NSObject {
     func update(with departure: Departure) {
         self.lineLabel.setText(departure.line)
         self.destinationLabel.setText(departure.destination)
-        self.timerLabel.setDate(departure.date)
-        self.timerLabel.start()
-        self.timerLabel.setHidden(false)
+
+        if departure.date.timeIntervalSinceNow > 0 {
+            self.timerLabel.setDate(departure.date)
+            self.timerLabel.start()
+            self.timerLabel.setHidden(false)
+        } else {
+            self.timerLabel.setHidden(true)
+        }
     }
 }
