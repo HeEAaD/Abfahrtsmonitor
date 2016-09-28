@@ -25,7 +25,7 @@ class Stop_Network_TestCase: XCTestCase {
     // MARK: integration tests
     func test_find() {
         let coordinates = [
-            CLLocationCoordinate2D(latitude: 51.051128, longitude: 13.733356), // Dresden
+//            CLLocationCoordinate2D(latitude: 51.051128, longitude: 13.733356), // Dresden
             CLLocationCoordinate2D(latitude: 52.387128, longitude: 9.735375) // Hannover
         ]
 

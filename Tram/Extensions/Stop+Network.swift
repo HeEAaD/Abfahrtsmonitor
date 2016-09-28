@@ -35,8 +35,8 @@ public extension Stop {
     /// - parameter completion: Nearby stops. Can be empty.
     public static func find(by coordinate: CLLocationCoordinate2D, completion: @escaping ([Stop]) -> Void) {
 
-        let provider = EfaProvider.nearest(from: coordinate)
-        let url = provider.url(with: coordinate)
+        let provider = Tram.nearestEfaProvider(from: coordinate)
+        let url = provider.coordRequestUrl(with: coordinate)
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             if
                 let data = data,
