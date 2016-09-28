@@ -17,7 +17,8 @@ class DepartueCache {
     func departures(stopId: String, completion: @escaping ([Departure]?) -> Void) {
 
         if let cachedDepartures = cache[stopId] {
-            completion(cachedDepartures)
+            let departures = cachedDepartures.filter { $0.date.timeIntervalSinceNow > 60}
+            completion(departures)
         }
 
         // TODO: find fast API
